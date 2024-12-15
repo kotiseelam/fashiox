@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { useRouter } from "next/navigation"; // To programmatically navigate to the wishlist page
+import { useRouter } from "next/navigation"; 
 
 export default function Store() {
-  const [wishlist, setWishlist] = useState([]); // Track items in wishlist
-  const [cart, setCart] = useState([]); // Track items in cart
-  const [selectedSize, setSelectedSize] = useState({}); // Track selected sizes for items
+  const [wishlist, setWishlist] = useState([]); 
+  const [cart, setCart] = useState([]); 
+  const [selectedSize, setSelectedSize] = useState({}); 
   const [availability] = useState({
     "T-shirt": "In stock",
     "Jeans": "Out of stock",

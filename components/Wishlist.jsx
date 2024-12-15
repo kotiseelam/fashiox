@@ -5,18 +5,18 @@ import Image from "next/image";
 export default function Wishlist() {
   const [wishlist, setWishlist] = useState([]);
 
-  // Add item to wishlist
+  
   const addToWishlist = (product) => {
     setWishlist((prevWishlist) => {
-      // Check if the item already exists in the wishlist
+      
       if (prevWishlist.some((item) => item.name === product.name)) {
-        return prevWishlist; // If exists, don't add again
+        return prevWishlist; 
       }
-      return [...prevWishlist, product]; // Otherwise, add it
+      return [...prevWishlist, product]; 
     });
   };
 
-  // Remove item from wishlist
+  
   const removeFromWishlist = (product) => {
     setWishlist((prevWishlist) => {
       return prevWishlist.filter((item) => item.name !== product.name);
